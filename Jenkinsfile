@@ -10,6 +10,7 @@ pipeline {
             steps {
                 git branch: 'dev', url: 'https://github.com/devopsgsvc/core-app.git'
                 sh "mvn -Dmaven.test.failure.ignore=true clean deploy"
+                
             }
 
             post {
