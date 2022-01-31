@@ -8,8 +8,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git branch: 'dev', url: 'https://github.com/devopsgsvc/core-app.git'
-                sh "mvn -Dmaven.test.failure.ignore=true clean deploy"  
+                git branch: 'dev', url: 'https://github.com/Monu1515/core-app.git'
+                sh "mvn -Dmaven.test.failure.ignore=true clean install"  
             }
 
             post {
