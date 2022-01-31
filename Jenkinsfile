@@ -1,5 +1,5 @@
 pipeline {
-    agent {label "test-label"}
+    agent {label "cloud-build"}
 
     tools {
         maven "maven-build"
